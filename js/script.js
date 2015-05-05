@@ -36,7 +36,7 @@
 				$gallery.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: 0,
+					transitionDuration: 0
 				});
 			}
 			else
@@ -44,7 +44,7 @@
 				$gallery.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: "1s",
+					transitionDuration: "1s"
 				});
 			}
 			
@@ -57,7 +57,7 @@
 				$bridesmaid.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: 0,
+					transitionDuration: 0
 				});
 			}
 			else
@@ -65,7 +65,7 @@
 				$bridesmaid.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: "1s",
+					transitionDuration: "1s"
 				});
 			}
 			
@@ -82,7 +82,7 @@
 				$groomsmen.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: 0,
+					transitionDuration: 0
 				});
 			}
 			else
@@ -90,7 +90,7 @@
 				$groomsmen.masonry({
 					columnWidth: ".grid_sizer",
 					itemSelector: ".masonry_col",
-					transitionDuration: "1s",
+					transitionDuration: "1s"
 				});
 			}
 			
@@ -315,11 +315,11 @@
 			$.supersized({
 				slides  :  	
 				[ 
-					{ image : '../images/slide1.jpg' },
-					{ image : '../images/slide3.jpg' },
+					{ image : 'https://raw.githubusercontent.com/cuongbn/Wedding/master/images/slide1.jpg' },
+					{ image : 'https://raw.githubusercontent.com/cuongbn/Wedding/master/images/slide3.jpg' },
 				],
 				horizontal_center : 0,
-				vertical_center : 0,
+				vertical_center : 0
 			});
 		});
 		
@@ -669,13 +669,13 @@
                  				latitude: -33.898361, 
                  				longitude: 151.175290, 
                  				html: "<strong>The Ceremony</strong><br/>Manalia Tower Floor 24 Room 256<br/>Anfix Street ST01<br/><strong>GPS:</strong> -33.898361, 151.175290", 
-                				popup: true,               
+                				popup: true
 							},
 							{
                 				latitude: -33.905485, 
                  				longitude: 151.169131, 
                  				html: "<strong>Wedding Party</strong><br/>Forine Restaurant<br/>Rose Street ST08<br/><strong>GPS:</strong> -33.905485, 151.169131", 
-                 				popup: true,               
+                 				popup: true
                     		} 
                 		], 
              		panControl: true, 
