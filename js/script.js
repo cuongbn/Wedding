@@ -313,11 +313,7 @@
 		//==================================================================================				
 		jQuery(function($){
 			$.supersized({
-				slides  :  	
-				[ 
-					{ image : 'https://raw.githubusercontent.com/cuongbn/Wedding/master/images/slide1.jpg' },
-					{ image : 'https://raw.githubusercontent.com/cuongbn/Wedding/master/images/slide3.jpg' },
-				],
+				slides  : slideIMGArr,
 				horizontal_center : 0,
 				vertical_center : 0
 			});
@@ -328,7 +324,8 @@
 		// COUNTDOWN
 		//===================================================================================
 		var theday = new Date();
-		theday = new Date(2015, 0, 12);
+		theday = new Date(2015, 4, 13, 13);
+
 		$('#countdown').countdown({until: theday, format: 'WDHMS'});
 
 		

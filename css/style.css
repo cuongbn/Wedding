@@ -248,7 +248,7 @@ p a:hover{
 /* 02-1 SideNavbar Icon 						 */
 /* ----------------------------------------------*/
 .sidebar-menuicon{
-	background:#bb5844;
+	background: #4dbb04;
 	height:100%;
 	top:0;
 	left:0;
@@ -879,7 +879,7 @@ input[type=text].form-control, input[type=email].form-control, select.form-contr
 
 .de-icon.circle{
 	border-radius: 50%;
-	background-color:#bb5844;
+	background-color: #98bb7d;
 	color:#FFF;
 }
 
@@ -927,7 +927,7 @@ a:hover .de-icon.customcolor i{
 }
 
 .de-icon.circle.customcolor, .de-icon.square.customcolor, .de-icon.rounded.customcolor{
-	background-color:#a4422e;
+	background-color: #bb0409;
 	color:#fff
 }
 
