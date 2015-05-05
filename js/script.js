@@ -315,8 +315,8 @@
 			$.supersized({
 				slides  :  	
 				[ 
-					{ image : 'images/slide1.jpg' },
-					{ image : 'images/slide3.jpg' },
+					{ image : '../images/slide1.jpg' },
+					{ image : '../images/slide3.jpg' },
 				],
 				horizontal_center : 0,
 				vertical_center : 0,
