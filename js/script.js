@@ -654,7 +654,7 @@
 	$(window).load(function () {	
 		// OPEN LOCATION MAP
 		//==================================================================================
-		$(".popup-map, #map-menu").click(function(e){
+		$(".popup-map-boy, #map-menu-boy").click(function(e){
 			e.preventDefault();
 			$("#location").show(0,function(){
 				$("#location_map").gMap({
@@ -663,18 +663,12 @@
              		markers: 
 			 			[
 			 				{
-                 				latitude: -33.898361, 
-                 				longitude: 151.175290, 
-                 				html: "<strong>The Ceremony</strong><br/>Manalia Tower Floor 24 Room 256<br/>Anfix Street ST01<br/><strong>GPS:</strong> -33.898361, 151.175290", 
+                 				latitude: 21.1967963,
+                 				longitude: 106.0922273,
+                 				html: "<strong>Nhà Trai</strong><br/>Khu 5 Thị Cầu<br/>Thành Phố Bắc Ninh - Tỉnh Bắc Ninh<br/><strong>GPS:</strong> 21.1967963, 106.0922273",
                 				popup: true
 							},
-							{
-                				latitude: -33.905485, 
-                 				longitude: 151.169131, 
-                 				html: "<strong>Wedding Party</strong><br/>Forine Restaurant<br/>Rose Street ST08<br/><strong>GPS:</strong> -33.905485, 151.169131", 
-                 				popup: true
-                    		} 
-                		], 
+                		],
              		panControl: true, 
              		zoomControl: true, 
              		mapTypeControl: true, 
@@ -707,8 +701,55 @@
 			$("body").addClass("is-popup");
 			
 		});
-		
-		
+
+        $(".popup-map-girl, #map-menu-girl").click(function(e){
+            e.preventDefault();
+            $("#location").show(0,function(){
+                $("#location_map").gMap({
+                    maptype: google.maps.MapTypeId.ROADMAP,
+                    zoom: 14,
+                    markers:
+                        [
+                            {
+                                latitude: 21.327517,
+                                longitude: 106.080787,
+                                html: "<strong>Nhà Gái</strong><br/>Chợ Bỉ - Ngọc Thiện<br/>Huyện Tân Yên - Tỉnh Bắc Giang<br/><strong>GPS:</strong> 21.327517, 106.080787",
+                                popup: true
+                            },
+                        ],
+                    panControl: true,
+                    zoomControl: true,
+                    mapTypeControl: true,
+                    scaleControl: true,
+                    streetViewControl: true,
+                    scrollwheel: false,
+                    styles: [ { "stylers": [ { "hue": "#bb5844" }, { "gamma": 1 }, { "saturation": -60 } ] } ],
+                    onComplete: function() {
+                        // Resize and re-center the map on window resize event
+                        var gmap = $("#location_map").data('gmap').gmap;
+                        window.onresize = function(){
+                            google.maps.event.trigger(gmap, 'resize');
+                            $("#location_map").gMap('fixAfterResize');
+                        };
+                    }
+                });
+            });
+
+
+            $(document).bind("touchmove",function(event){
+                event.preventDefault();
+            });
+
+            if (!device.tablet() && !device.mobile() && isIE() != 1 && !$("body").hasClass("safari-mac")) {
+                $("html").getNiceScroll().remove();
+            }
+
+            $("html").css("overflow","hidden");
+
+            $("body").addClass("is-popup");
+
+        });
+
 		// CLOSE LOCATION MAP
 		//==================================================================================
 		$("#location-overlay").click(function(){

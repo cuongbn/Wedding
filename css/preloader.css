@@ -16,12 +16,6 @@
 	visibility:hidden;
 }
 
-.background_image{
-	background-image:url(../images/preloader_background.jpg); 
-	background-position:center center; 
-	background-size:cover; 
-}
-
 #white-screen{
 	background-color:#FFF; 
 	position:fixed;
