@@ -487,6 +487,7 @@ p a:hover{
 
 #slider img{
 	background-color:#FFF;
+    width: 100%;
 }
 
 #slider-title{
